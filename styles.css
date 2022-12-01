@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .text-shadow-yellow {
+        text-shadow: 3px 3px 0 #FECA1B;
+    }
+
+    .text-shadow-blue {
+        text-shadow: 3px 3px 0 #3761A8;
+    }
+}
