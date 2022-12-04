@@ -8,6 +8,14 @@
     }
 
     .text-shadow-blue {
-        text-shadow: 3px 3px 0 #3761A8;
+        text-shadow: 3px 0px 2px #3761A8;
+    }
+
+    .dex-shadow {
+        box-shadow: 4px 4px 0 #808080;
+    }
+
+    .font-poppins {
+        font-family: 'Poppins';
     }
 }

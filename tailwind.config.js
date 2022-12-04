@@ -7,7 +7,7 @@ module.exports = {
         blue: '#3761A8'
       },
       backgroundImage: theme => ({
-        'pokedex-theme': "url('/src/assets/pokedexBackground.jpg')"
+        'pokebola-theme': "url('/src/assets/pokebola-Theme.png')"
       }),
     },
   },

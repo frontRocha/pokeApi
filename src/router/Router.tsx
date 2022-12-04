@@ -1,12 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
+import Pokemons from "../pages/pokemons/Pokemons";
+import Home from "../pages/home/Home";
+import Navbar from "../compontents/layout/NavBar";
 
 export default function Router() {
 
     return (
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/pokemons" element={<div><Navbar /><Pokemons /></div>} />
+                    <Route path="/" element={<Home />}/>
                 </Routes>
             </BrowserRouter>
     )
