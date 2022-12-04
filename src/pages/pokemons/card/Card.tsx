@@ -32,7 +32,7 @@ export const Card: React.FC<Props> = ({ data, valueName }) => {
         <div className={`w-[300px] md:w-[320px] xl:w-[400px] card ${value.type} py-3 px-2 mb-2 border border-gray-600 rounded-xl dex-shadow font-poppins`} onClick={handleTeste}>
             <h3 className="text-white text-2xl">{value.name[0].toLocaleUpperCase() + value.name.substring(1)}</h3>
             <div className="w-full flex justify-end">
-                <img className="w-[110px] h-auto" src={value.front_default} alt='sprite'/>
+                <img className="w-[110px] h-auto" src={value.front_default} alt={value.front_default}/>
             </div>
             <span className="text-white rounded-xl py-1 px-2 border border-white text-sm">{value.type}</span>
         </div>
