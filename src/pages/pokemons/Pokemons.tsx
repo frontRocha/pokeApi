@@ -25,9 +25,7 @@ export default function Pokemons() {
             
             return response
         }
-        setTimeout(() => {
-            setLoading(false)
-        }, 2000)
+        setLoading(false)
         handlePokemon()
 
     }, [count])

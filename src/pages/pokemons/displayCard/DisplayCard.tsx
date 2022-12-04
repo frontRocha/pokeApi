@@ -21,10 +21,8 @@ const DisplayCard: React.FC<ReceiveName> = ({ data }) => {
             setOpen(true)
             setLoading(true)
             const response = axios.get<Person>(`https://pokeapi.co/api/v2/pokemon/${data[1]}`).then((res) => setVetor(Object(res.data)))
-            setTimeout(() => {
-                setLoading(false)
-            }, 3000)
             
+            setLoading(false)
         }
     }, [data])
 
