@@ -22,11 +22,13 @@ export default function Pokemons() {
                 endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`)
             }
             var response = axios.all(endpoints.map((endpoint) => axios.get<PersonCard>(endpoint))).then((res) => setData(Object.values<any>(res)))
-            
+            setTimeout(() => {
+                setLoading(false)
+            }, 1000)
             return response
         }
 
-        setLoading(false)
+        
         handlePokemon()
     }, [count])
 
