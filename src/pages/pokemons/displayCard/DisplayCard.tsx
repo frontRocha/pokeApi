@@ -28,7 +28,7 @@ const DisplayCard: React.FC<ReceiveName> = ({ data }) => {
         }
     }, [data])
 
-    const trasnformVetor = Array(vetor)
+    const transformVetor = Array(vetor)
 
     const cancelButtonRef = useRef(null)
 
@@ -68,7 +68,7 @@ const DisplayCard: React.FC<ReceiveName> = ({ data }) => {
                                             <h1 className="text-white text-2xl font-poppins ml-4">{data ? data[1][0].toLocaleUpperCase() + data[1].substring(1) : ""}</h1>
                                             <span className="text-white text-sm text-center font-poppins ml-4 rounded-xl border border-white py-1 px-2">{data ? data[0][0].toLocaleUpperCase() + data[0].substring(1) : ""}</span>
                                         </div>
-                                        {trasnformVetor.map((item, index) => (
+                                        {transformVetor.map((item, index) => (
                                             <div key={index}>
                                                 <div className="text-white text-sm font-poppins w-full h-full flex flex-col mt-4">
                                                     <strong className="mx-2">Status:</strong>
