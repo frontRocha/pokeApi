@@ -21,7 +21,7 @@ const DisplayCard: React.FC<ReceiveName> = ({ data }) => {
             setOpen(true)
             setLoading(true)
             const response = axios.get<Person>(`https://pokeapi.co/api/v2/pokemon/${data[1]}`).then((res) => setVetor(Object(res.data)))
-            
+
             setLoading(false)
         }
     }, [data])
@@ -104,8 +104,8 @@ const DisplayCard: React.FC<ReceiveName> = ({ data }) => {
                                                     </div>
                                                 </div>
                                                 <div className="relative flex justify-center">
-                                                    <img className="absolute imageOne w-[125px]" src={item?.sprites.back_default} alt={item?.sprites.back_default} />
-                                                    <img className="absolute imageTwo w-[125px]" src={item?.sprites.front_default} alt={item?.sprites.front_default} />
+                                                    <img className="absolute imageOne w-[125px] h-auto" src={item?.sprites.back_default} alt={item?.sprites.back_default} />
+                                                    <img className="absolute imageTwo w-[125px] h-auto" src={item?.sprites.front_default} alt={item?.sprites.front_default} />
                                                 </div>
                                             </div>
                                         ))}

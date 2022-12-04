@@ -5,7 +5,7 @@ export default function Home() {
     return(
         <section className='w-screen min-h-screen flex flex-col items-center bg-pokebola-theme bg-no-repeat bg-cover bg-[#FFCC01]'>
             <div className='max-w-[1000px] min-h-[500px] lg:min-h-[700px] h-auto flex flex-col justify-around items-center'>
-            <img className='w-[250px] lg:w-[550px]' src={Logo} alt="Pokemon"/>
+            <img className='w-[250px] h-auto lg:w-[550px]' src={Logo} alt="Pokemon"/>
 
             <div className='flex flex-col items-center text-center'>
                 <h3 className='text-xl lg:text-2xl text-white font-poppins font-normal text-shadow-blue'>Se aventure no mundo dos <br/> Pokémons de um jeito divertido</h3>

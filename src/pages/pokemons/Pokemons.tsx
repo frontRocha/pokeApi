@@ -25,19 +25,18 @@ export default function Pokemons() {
             
             return response
         }
+
         setLoading(false)
         handlePokemon()
-
     }, [count])
 
-    const handleTeste = (e: string) => {
-        setReceiveName(e)
-    }
+    const handleTeste = (e: string) => setReceiveName(e)
 
     const handleMoreCount = () => {
         if (count >= 903) {
             return
         }
+
         setCount(count + 12)
     }
 
